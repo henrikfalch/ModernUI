@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.SeekBar;
 
@@ -67,8 +70,14 @@ public class FullscreenActivity extends Activity {
     }
 
     @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate( R.menu.menu_main, menu );
+        return true;
+    }
+
+    public void showDialog(MenuItem item) {
+
+        Log.i("HOHOHO", "FUNKA JO!!!!!!!!!!!");
     }
 
     private class ColorBox {
