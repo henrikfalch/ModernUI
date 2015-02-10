@@ -1,6 +1,7 @@
 package android.course.modernui;
 
 import android.app.Activity;
+import android.course.components.MoreInfoDialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -18,6 +19,8 @@ import static android.graphics.Color.rgb;
 
 
 public class FullscreenActivity extends Activity {
+
+    public static final String TAG = "FullscreenActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,8 +79,8 @@ public class FullscreenActivity extends Activity {
     }
 
     public void showDialog(MenuItem item) {
-
-        Log.i("HOHOHO", "FUNKA JO!!!!!!!!!!!");
+        MoreInfoDialog dialog = new MoreInfoDialog();
+        dialog.show(getFragmentManager(), TAG);
     }
 
     private class ColorBox {
