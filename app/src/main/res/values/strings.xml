@@ -4,7 +4,7 @@
     <string name="app_name">ModernUI</string>
     <string name="more_info">More information</string>
     <string name="dialog_message">Go to MOMA to learn a lot about art!</string>
-    <string name="dialog_positive">Take me to MOMA</string>
-    <string name="dialog_negative">Not now</string>
+    <string name="dialog_positive">Visit MOMA</string>
+    <string name="dialog_negative">Not Now</string>
 
 </resources>
